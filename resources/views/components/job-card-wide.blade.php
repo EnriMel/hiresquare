@@ -1,7 +1,10 @@
-<div class="p-4 bg-white/5 rounded-xl flex flex-col text-center">
-    <img src="http://placehold.co/42x42" alt="" class="rounded-xl">
+<div class="p-4 bg-white/5 rounded-xl flex gap-x-6">
 
     <div>
+        <img src="https://picsum.photos/seed/{{ rand(0, 10) }}/90/90" alt="" class="rounded-xl">
+    </div>
+
+    <div class="flex-1">
         <a href="#" class="self-start text-sm">Adventure TV</a>
         <h3>Video Producer</h3>
         <p>Full Time - From $60,000</p>
