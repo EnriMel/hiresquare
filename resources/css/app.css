@@ -11,4 +11,5 @@
         "Noto Color Emoji";
     --color-black-500: #060606;
     --font-hanken-grotesk: Hanken, Grotesk;
+    --text-tiny: 0.625rem; //10 pz
 }
