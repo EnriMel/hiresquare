@@ -1,8 +1,9 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
+use App\Models\Employer;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
 
 return new class extends Migration
 {
@@ -13,8 +14,13 @@ return new class extends Migration
     {
         Schema::create('jobs', function (Blueprint $table) {
             $table->id();
+            $table->foreignIdFor(Employer::class);
             $table->string("title");
             $table->string("salary");
+            $table->string('location');
+            $table->string('schedule')->default('Full Time');
+            $table->string('url');
+            $table->boolean('featured')->default(false);
             $table->timestamps();
         });
     }
