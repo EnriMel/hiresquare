@@ -19,5 +19,5 @@ it('belongs to an employer', function () {
 it('can have tags', function() {
     $job = Job::factory()->create();
     $job->tag('frontend');
-    expect($job->tags)toHaveCount(1);
+    expect($job->tags)->toHaveCount(1);
 });
