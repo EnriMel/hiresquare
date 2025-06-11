@@ -22,15 +22,9 @@
         <section>
             <x-section-heading>Tags</x-section-heading>
             <div class="mt-6 space-x-1">
-                <x-tag>Tag</x-tag>
-                <x-tag>Tag</x-tag>
-                <x-tag>Tag</x-tag>
-                <x-tag>Tag</x-tag>
-                <x-tag>Tag</x-tag>
-                <x-tag>Tag</x-tag>
-                <x-tag>Tag</x-tag>
-                <x-tag>Tag</x-tag>
-                <x-tag>Tag</x-tag>
+                @foreach ($tags as $tag)
+                    <x-tag :$tag /> {{-- syntactic sugar for <x-tag :tag='$tag' /> when the name of paramether is the same of the variable --}}
+                @endforeach
             </div>
         </section>
 
